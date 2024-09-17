@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONA's APPLE MALL</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        body {
+            background-color: black;
+            background-size: cover; /* Ensure the background image covers the entire background */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: #000080;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #FF0000;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #FF4500;
+            border-radius: 5px;
+        }
+        nav .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        nav .dropdown-content a {
+            color: #FF4500;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        nav .dropdown-content a:hover {
+            background-color: lightblue;
+        }
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 60px; /* Ensure space for the footer */
+        }
+        footer {
+            background-color: #000080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 5px;
+        }
+        footer a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add this section for mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            /* Adjust header for mobile */
+            header h1 {
+                font-size: 1.5em; /* Reduce font size for better fit */
+            }
+            header strong {
+                display: block; /* Stack the telephone and email on separate lines */
+            }
+            
+            /* Adjust navigation for mobile */
+            nav {
+                flex-direction: column; /* Stack links vertically */
+                align-items: center; /* Center the links */
+            }
+            nav a {
+                margin: 5px 0; /* Adjust spacing */
+                font-size: 0.9em; /* Reduce font size slightly */
+            }
+            nav .dropdown-content {
+                position: static; /* Make dropdowns stack on mobile */
+                min-width: 100%; /* Full width on mobile */
+            }
+
+            /* Adjust footer for mobile */
+            footer {
+                font-size: 0.8em; /* Reduce footer text size */
+            }
+
+            /* Reduce section padding for mobile */
+            section {
+                padding: 10px;
+            }
+
+            /* Ensure no content overflows on smaller screens */
+            html, body {
+                overflow-x: hidden;
+            }
+
+            /* Responsive background image adjustment */
+            body {
+                background-size: cover; /* Ensure background covers on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to ONA's APPLE MALL</h1>
+        <strong> Telephone Number:</strong> 0 2 4 9 5 5 8 5 2 3 / 0 5 3 3 3 6 0 8 7 8 
+        <strong> Email Address:</strong> onasapplemall@gmail.com
+    </header>
+
+    <nav>
+        <a href="#about">About ONA's</a>
+        <div class="dropdown">
+            <a href="#">Apple Products</a>
+            <div class="dropdown-content">
+                <a href="iphones.html">Apple iPhones</a>
+                <a href="watches.html">Apple Watches</a>
+                <a href="macbooks.html">MacBooks</a>
+                <a href="accessories.html">Apple Products & Accessories</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Samsung Products</a>
+            <div class="dropdown-content">
+                <a href="samsung.html">Samsung Products</a>
+            </div>
+        </div>
+        <a href="other-brands.html">Other Phone Brands</a>
+        <a href="other-phone-accessories.html">Phone Accessories</a>
+        <a href="laptops.html">Laptops</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <footer id="contact">
+        <p><strong>Store Address:</strong> Madina Akuapem Station</p>
+        <p>Developed by: Koddok (cryptickinggh@gmail.com)</p>
+    </footer>
+
+    <script>
+        const images = [
+            'images/BK3.jpg',
+            'images/BK66.jpeg',
+            'images/A6.jpg',
+            'images/BK3.jpg',
+            'images/BK66.jpeg',
+            'images/A6.jpg'
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackgroundImage() {
+            document.body.style.backgroundImage = `url(${images[currentIndex]})`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        changeBackgroundImage(); // Set initial image
+        setInterval(changeBackgroundImage, 5000); // Change image every 5 seconds
+    </script>
+</body>
+</html>

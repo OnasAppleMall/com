@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONA's - Apple Products & Accessories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('images/MacBook Air (13-inch, 2024).jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        header {
+            background-color: #000080;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #FF0000;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #FF4500;
+            border-radius: 5px;
+        }
+        .product {
+            background-color: white;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #FF4500;
+        }
+        .product p {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #000080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 5px;
+        }
+        footer a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Add this section for mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            /* Adjust navigation for mobile */
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 5px 0;
+                font-size: 0.9em;
+            }
+
+            /* Adjust product display for mobile */
+            .product {
+                width: 90%;
+                margin: 10px auto;
+                display: block;
+            }
+
+            /* Ensure images scale properly */
+            .product img {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Adjust footer for mobile */
+            footer {
+                font-size: 0.8em;
+                position: static;
+                padding: 15px;
+            }
+
+            /* General adjustments */
+            body {
+                background-size: cover;
+                overflow-x: hidden;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laptops</h1>
+        <strong> Telephone Number:</strong> 0 2 4 9 5 5 8 5 2 3 / 0 5 3 3 3 6 0 8 7 8 
+        <strong> Email Address:</strong> onasapplemall@gmail.com
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html">Apple Products</a>
+        <a href="samsung.html">Samsung Products</a>
+        <a href="other-brands.html">Other Phone Brands</a>
+        <a href="other-phone-accessories.html">Phone Accessories</a>
+        <a href="laptops.html">Laptops</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section id="products">
+        <h2> </h2>
+        <div class="product">
+            <img src="images/MacBook Air (13-inch, 2024).jpg" alt="MacBook Air (13-inch, 2024)">
+            <p><strong> MackBook Air (13-inch, 2024)</strong></p>
+            <p>Specs: M3 Processor, 16/24GB unified memory,512GB/1TB SSD, Dual USB-C Port Compact Power Adapter</p>
+            <p>Please call to place your order. We offer nationwide delivery for a fee, and payment is made upon delivery.</p>
+        </div>
+        <div class="product">
+            <img src="images/MacBook Pro (13-inch, 2023).jpg" alt="MacBook Air (13-inch, 2023)">
+            <p><strong> MackBook Air (13-inch, 2024)</strong></p>
+            <p>Specs: M3 Processor, 8/16/24GB unified memory, 256/512GB/1TB/2TB SSD, 3 Thunderbolt, Headphone Jack</p>
+            <p>Please call to place your order. We offer nationwide delivery for a fee, and payment is made upon delivery.</p>
+        </div>
+        <div class="product">
+            <img src="images/Dell Lat 3520.jpeg" alt="Dell Lat 3520">
+            <p><strong> Dell Latitude 3520</strong></p>
+            <p>15.6", 60Hz, Full HD, Intel i5</p>
+            <p>Please call to place your order. We offer nationwide delivery for a fee, and payment is made upon delivery.</p>
+        </div>
+        <div class="product">
+            <img src="images/Lenovo 2022 IdeaPad.jpg" alt="Lenovo 2022 IdeaPad">
+            <p><strong> Lenovo 2022 IdeaPad</strong></p>
+            <p>15.6", 11th Gen, HD Touch Screen, Intel i3, 20GB DDR4 RAM, 1TB, Windows 11 Home</p>
+            <p>Please call to place your order. We offer nationwide delivery for a fee, and payment is made upon delivery.</p>
+        </div>
+        <div class="product">
+            <img src="images/Samsung Notebook 9 Pro.jpg" alt="Samsung Notebook 9 Pro">
+            <p><strong> Samsung Notebook 9 Pro</strong></p>
+            <p>Specs: 8th Gen Intel CoreTM i7, Windows 10 Home, Stylus Pen, Energy Star Certified</p>
+            <p>Please call to place your order. We offer nationwide delivery for a fee, and payment is made upon delivery.</p>
+            <button onclick="addToCart('Samsung Notebook 9 Pro', 'AC-005')">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>Store Address:</strong> Madina Akuapem Station</p>
+        <p>Developed by: Koddok (cryptickinggh@gmail.com)</p>
+    </footer>
+
+    <script>
+        function addToCart(productName, referenceNumber) {
+            alert(productName + " (" + referenceNumber + ") has been added to your cart!");
+        }
+    </script>
+</body>
+</html>
